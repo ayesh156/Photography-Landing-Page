@@ -16,7 +16,8 @@ const HeroSection = () => {
                 {/* Right Section */}
                 <div className="relative flex justify-center items-center z-10 bg-black p-10">
                     {/* Overlay Text */}
-                    <div className="absolute bottom-[250px] left-[183px] w-[326px] z-20">
+                    <div
+                        className="absolute lg:bottom-[250px] lg:left-[183px] transform lg:transform-none -translate-x-1/2 -translate-y-1/2  lg:w-[326px] z-20 text-center lg:text-left">
                         <p className="text-[22px] text-[#898D92]">
                             Pellentesque Mauris A Lobortis In Bibendum Sed Lobortis Semper.
                             Eget Eu Vel Eu Vitae.
@@ -25,42 +26,57 @@ const HeroSection = () => {
 
                 </div>
 
+                {/*<div className="relative flex justify-center items-center z-10 bg-black p-10">
+                 Overlay Text
+                <div className="absolute lg:bottom-[250px] lg:left-[183px] bottom-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[326px] z-20 text-center">
+                    <p className="text-[22px] text-[#898D92]">
+                        Pellentesque Mauris A Lobortis In Bibendum Sed Lobortis Semper.
+                        Eget Eu Vel Eu Vitae.
+                    </p>
+                </div>
+            </div>*/}
+
                 {/* Centered Image */}
                 <img
                     src={noah}
                     alt="Photography"
-                    className="absolute inset-0 mx-auto my-auto object-contain h-[851px] mt-[173px] w-auto opacity-90 z-10"
+                    className="absolute lg:inset-0 mx-auto my-auto object-contain lg:h-[851px] bottom-0 lg:top-[173px] w-auto opacity-90 z-10"
                 />
 
                 {/* Left side Text */}
                 <div
-                    className="leading-[109px] text-[90px] absolute left-[120px] font-[400] top-[345px] font-['Cormorant'] z-30">
-                    <span>PHOTO</span><br/>
-                    <span className="ml-24">GRAPHY</span>
+                    className="absolute top-44 left-1/2 transform -translate-x-1/2 text-center font-[400] z-30 text-5xl font-['Cormorant']
+                        lg:left-[120px] lg:top-[345px] lg:text-[90px] leading-tight lg:leading-[109px] lg:transform-none lg:-translate-x-0">
+                    <div>
+                        <span>PHOTO</span><br/>
+                        <span className="lg:ml-24">GRAPHY</span>
+                    </div>
                 </div>
 
+
                 {/* Order Now Button */}
-                <div className="absolute bottom-[101px] left-1/2 transform -translate-x-1/2 w-[238px] h-[66px] z-30">
+                <div
+                    className="absolute lg:bottom-[101px] bottom-[25rem] left-1/2 transform -translate-x-1/2 lg:w-[238px] lg:h-[66px] z-30">
                     <button
-                        className="text-[#898D92] text-[26px] border-[1.5px] border-white py-2 px-6 w-full h-full hover:bg-white hover:text-black transition">
+                        className="text-[#898D92] lg:text-[26px] border-[1.5px] border-white py-2 px-6 w-full h-full hover:bg-white hover:text-black transition">
                         Order Now
                     </button>
                     {/* Removing part of the right-side border */}
-                    <div className="absolute right-[-1px] top-4 h-1/2 w-[3px] bg-black z-40"></div>
+                    <div className="absolute right-[-1px] top-3 lg:top-4 h-1/2 w-[3px] bg-black z-40"></div>
                 </div>
-        </div>
+            </div>
 
-    {/* Social Links */
-    }
-    <div className="absolute right-[108px] top-[115px] z-50">
-        <div className="flex flex-col items-center space-y-6">
-            {/* Vertical Line */}
-            <div className="h-[215px] w-[2px] bg-[#233942]"></div>
+            {/* Social Links */
+            }
+            <div className="absolute lg:right-[108px] right-11 top-[115px] z-40">
+                <div className="flex flex-col items-center space-y-6">
+                    {/* Vertical Line */}
+                    <div className="h-[215px] w-[2px] bg-[#233942]"></div>
 
-            {/* Icons */}
-            {socialIcons.map((item, i) => (
-                <a key={i} href="#" className="py-4">
-                <img src={item.image} alt=""/>
+                    {/* Icons */}
+                    {socialIcons.map((item, i) => (
+                        <a key={i} href="#" className="py-4">
+                            <img src={item.image} alt=""/>
                         </a>
                     ))}
 

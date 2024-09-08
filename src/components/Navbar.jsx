@@ -29,7 +29,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {mobileDrawerOpen && (
-                    <div className="absolute top-16 right-0 bg-neutral-900 z-20 w-full px-12 py-4 flex flex-col justify-center items-center lg:hidden">
+                    <div className="absolute top-16 right-0 bg-neutral-900 z-50 w-full px-12 py-4 flex flex-col justify-center items-center lg:hidden">
                         <ul>
                             {navItems.map((item, i) => (
                                 <li key={i} className="py-4">
