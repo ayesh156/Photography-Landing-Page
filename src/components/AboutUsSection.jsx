@@ -32,7 +32,7 @@ const AboutUsSection = () => {
                     </div>
                 </div>
 
-                <div className="absolute lg:left-[254px] left-5 top-[450px] lg:top-[312px] z-20">
+                <div className="absolute lg:left-[254px] left-5 top-[470px] lg:top-[312px] z-20">
                     <img src={down_arrow} alt=""/>
                 </div>
 

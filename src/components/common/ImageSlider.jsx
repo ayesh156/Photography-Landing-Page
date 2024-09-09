@@ -30,10 +30,12 @@ const ImageSlider = () => {
                     // When width is >= 1024px
                     1024: {
                         slidesPerView: 5,
+                        spaceBetween: 26
                     },
                     // When width is < 1024px
                     0: {
                         slidesPerView: 2,
+                        spaceBetween: 8
                     },
                 }}
                 modules={[Navigation]}
