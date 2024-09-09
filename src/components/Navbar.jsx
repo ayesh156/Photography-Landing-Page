@@ -11,14 +11,14 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="fixed w-full h-[100px] flex justify-center items-center top-0 z-50 backdrop-blur-lg border-b border-gray-900">
+        <nav className="fixed w-full h-[100px] flex justify-center items-center text-primary-white top-0 z-50 backdrop-blur-lg border-b border-gray-900">
             <div className="container px-4 lg:px-28 mx-auto relative text-sm">
                 <div className="flex justify-between items-center">
                         <img className="h-5 lg:h-[27px] mr-2" src={logo} alt="logo"/>
                     <ul className="hidden lg:flex ml-14 space-x-12">
                         {navItems.map((item, i) => (
                             <li key={i}>
-                                <a href={item.href} className="text-[16px] uppercase text-[#898D92]">{item.label}</a>
+                                <a href={item.href} className="text-[16px] uppercase">{item.label}</a>
                             </li>
                         ))}
                     </ul>
@@ -33,7 +33,7 @@ const Navbar = () => {
                         <ul>
                             {navItems.map((item, i) => (
                                 <li key={i} className="py-4">
-                                    <a href={item.href} className="text-[16px] uppercase text-[#898D92]">{item.label}</a>
+                                    <a href={item.href} className="text-[16px] uppercase">{item.label}</a>
                                 </li>
                             ))}
                         </ul>
