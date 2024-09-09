@@ -1,7 +1,7 @@
 import down_arrow from '../assets/down-arrow.svg'
 import ImageSlider from "./common/ImageSlider.jsx";
 
-const AboutUsSection = () => {
+const AboutUs = () => {
 
     return (
         <div className="relative min-h-screen bg-primary-black">
@@ -32,7 +32,7 @@ const AboutUsSection = () => {
                     </div>
                 </div>
 
-                <div className="absolute lg:left-[254px] left-5 top-[470px] lg:top-[312px] z-20">
+                <div className="absolute lg:left-[254px] left-5 top-[450px] lg:top-[312px] z-20">
                     <img src={down_arrow} alt=""/>
                 </div>
 
@@ -51,16 +51,16 @@ const AboutUsSection = () => {
                         <span className="lg:text-[24px]">Portfolio Photos</span>
                     </div>
                 </div>
+
                 <div
                     className="absolute top-[800px] w-full">
                 <ImageSlider/>
                 </div>
             </div>
 
-
         </div>
     );
 
 }
 
-export default AboutUsSection;
+export default AboutUs;

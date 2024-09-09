@@ -7,8 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-black': '#0D0F11', // Example primary color
-        'primary-white': '#898D92', // Example primary color
+        'primary-black': '#0D0F11',
+        'primary-white': '#898D92',
+        'primary-green': '#141F24',
+        'secondary-green': '#233942',
         // Add more colors here
       },
     },

@@ -1,16 +1,20 @@
 import Navbar from "./components/Navbar.jsx";
-import HeroSection from "./components/HeroSection.jsx";
-import AboutUsSection from "./components/AboutUsSection.jsx";
+import Hero from "./components/Hero.jsx";
+import AboutUs from "./components/AboutUs.jsx";
 import Portfolio from "./components/Portfolio.jsx";
+import Benefit from "./components/Benefit.jsx";
+import Testimonial from "./components/Testimonial.jsx";
 
 function App() {
 
     return (
         <>
             <Navbar/>
-            <HeroSection/>
-            <AboutUsSection/>
+            <Hero/>
+            <AboutUs/>
             <Portfolio />
+            <Benefit />
+            <Testimonial />
         </>
     )
 }

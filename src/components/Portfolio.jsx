@@ -1,27 +1,23 @@
-import noah from '../assets/noah-buscher-1-kPytLsVkY-unsplash-PhotoRoom.png';
+
 import {portfolioItems} from '../constants/index.jsx';
-import down_arrow from '../assets/down-arrow.svg'
-import ImageSlider from "./common/ImageSlider.jsx";
 import React, { useState } from 'react';
 import Gallery from "./common/Gallery.jsx";
 
-const AboutusSection = () => {
-    const [activeIndex, setActiveIndex] = useState(null);
+const AboutUs = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
 
     return (
         <div className="relative min-h-screen bg-primary-black">
 
-            {/* Main Section */}
             <div className="relative h-[2250px] lg:h-[1170px] pt-[76px]">
 
                 <div className="flex flex-col justify-between">
-                    {/* Left Section */}
+
                     <div
                         className="lg:mx-[120px] font-[400] text-5xl font-['Cormorant'] text-center lg:text-right lg:text-[70px] lg:leading-[85px] text-white">
-                        <span>PORTFOLIO</span>
+                        <h1>PORTFOLIO</h1>
                     </div>
 
-                    {/* Right Section */}
                     <div
                         className="lg:mx-[120px] text-center mt-8 lg:mt-[55px] lg:text-right">
                         <div className="lg:flex lg:justify-end">
@@ -41,7 +37,6 @@ const AboutusSection = () => {
                     </div>
                 </div>
 
-
                 <div
                     className="absolute top-[372px] w-full">
                     <Gallery />
@@ -54,4 +49,4 @@ const AboutusSection = () => {
 
 }
 
-export default AboutusSection;
+export default AboutUs;

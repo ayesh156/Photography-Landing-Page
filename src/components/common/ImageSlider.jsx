@@ -1,16 +1,14 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {useSwiper} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import {aboutImg, socialIcons} from "../../constants/index.jsx";
+import {aboutImg} from "../../constants/index.jsx";
 
-import {Navigation,EffectCoverflow} from 'swiper/modules';
+import {Navigation} from 'swiper/modules';
 import {CircleArrowLeft, CircleArrowRight} from "lucide-react";
 
 const ImageSlider = () => {
-    const swiper = useSwiper();
 
     return (
         <div className="relative min-h-screen text-white">

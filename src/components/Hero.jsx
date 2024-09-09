@@ -1,7 +1,7 @@
 import noah from '../assets/noah-buscher-1-kPytLsVkY-unsplash-PhotoRoom.png';
 import {socialIcons} from '../constants/index.jsx';
 
-const HeroSection = () => {
+const Hero = () => {
 
     return (
         <div className="relative min-h-screen bg-primary-black text-white">
@@ -38,8 +38,8 @@ const HeroSection = () => {
                     className="absolute top-44 left-1/2 transform -translate-x-1/2 text-center font-[400] z-30 text-5xl font-['Cormorant']
                         lg:left-[120px] lg:top-[345px] lg:text-[90px] leading-tight lg:leading-[109px] lg:transform-none lg:-translate-x-0">
                     <div>
-                        <span>PHOTO</span><br/>
-                        <span className="lg:ml-24">GRAPHY</span>
+                        <h1><span>PHOTO</span><br/>
+                        <span className="lg:ml-24">GRAPHY</span></h1>
                     </div>
                 </div>
 
@@ -79,4 +79,4 @@ const HeroSection = () => {
 
 }
 
-export default HeroSection;
+export default Hero;

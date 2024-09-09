@@ -22,6 +22,15 @@ import pimg8 from "../assets/portfolio_img/img-8.png";
 import pimg9 from "../assets/portfolio_img/img-9.png";
 import pimg10 from "../assets/portfolio_img/img-10.png";
 
+import wimg1 from "../assets/whyme_img/img-1.svg";
+import wimg2 from "../assets/whyme_img/img-2.svg";
+import wimg3 from "../assets/whyme_img/img-3.svg";
+import wimg4 from "../assets/whyme_img/img-4.svg";
+import wimg5 from "../assets/whyme_img/img-5.svg";
+
+import timg1 from "../assets/testimonial_img/img-1.png";
+import timg2 from "../assets/testimonial_img/img-2.png";
+import timg3 from "../assets/testimonial_img/img-3.png";
 
 export const navItems = [
   { label: "portofolio", href: "#" },
@@ -37,6 +46,66 @@ export const portfolioItems = [
   { label: "product", href: "#" },
   { label: "food", href: "#" },
   { label: "fashion", href: "#" },
+];
+
+export const testimonialCardItems = [
+  {
+    img: timg1,
+    name: "jhon maftuh",
+    social: "facebook",
+    desc: "Lorem ipsum dolor sit amet consectetur. Pellentesque eget id quis arcu sem ac nulla interdum. Turpis sagittis blandit pharetra mauris quis nulla ornare amet. Enim placerat eu mauris aliquet viverra mi diam."
+  },
+  {
+    img: timg2,
+    name: "verda angel",
+    social: "instagram",
+    desc: "Lorem ipsum dolor sit amet consectetur. Pellentesque eget id quis arcu sem ac nulla interdum. Turpis sagittis blandit pharetra mauris quis nulla ornare amet. Enim placerat eu mauris aliquet viverra mi diam."
+  },
+  {
+    img: timg3,
+    name: "lovia franciska",
+    social: "google",
+    desc: "Lorem ipsum dolor sit amet consectetur. Pellentesque eget id quis arcu sem ac nulla interdum. Turpis sagittis blandit pharetra mauris quis nulla ornare amet. Enim placerat eu mauris aliquet viverra mi diam."
+  },
+];
+
+
+export const whymeItems = [
+  {
+    left: "605px",
+    textColor: "text-white",
+    img: wimg1,
+    topic: "agency",
+    desc: "Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et."
+  },
+  {
+    left: "1088px",
+    textColor: "text-primary-white",
+    img: wimg2,
+    topic: "choose idea",
+    desc: "Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et."
+  },
+  {
+    left: "120px",
+    textColor: "text-primary-white",
+    img: wimg3,
+    topic: "satisfaction",
+    desc: "Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et."
+  },
+  {
+    left: "605px",
+    textColor: "text-primary-white",
+    img: wimg4,
+    topic: "quality",
+    desc: "Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et."
+  },
+  {
+    left: "1088px",
+    textColor: "text-primary-white",
+    img: wimg5,
+    topic: "creativity",
+    desc: "Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et."
+  },
 ];
 
 export const socialIcons = [

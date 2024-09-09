@@ -2,9 +2,7 @@ import {portfolioImg} from "../../constants/index.jsx";
 import right_arrow from "../../assets/portfolio_img/right_arrow.png";
 
 const Gallery = () => {
-    const onInit = () => {
-        console.log('lightGallery has been initialized');
-    };
+
     return (
         <div className="gallery-container">
 
