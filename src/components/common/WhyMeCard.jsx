@@ -1,10 +1,9 @@
-const WhyMeCard = ({ left, textColor, img, topic, desc }) => (
-    <div
-        style={{ left: window.innerWidth >= 1024 ? `${left}` : '0' }} // Use inline style for left positioning
-        className="lg:absolute mt-10 lg:mt-0 text-center lg:text-left text-white lg:w-[251px] mx-16 lg:mx-0 lg:my-[10px]"
+const WhyMeCard = ({ textColor, img, topic, desc }) => (
+    <div// Use inline style for left positioning
+        className="flex flex-col justify-center items-center lg:items-start mt-10 lg:mt-0 text-center capitalize lg:text-left text-white lg:w-[380px] mx-10 lg:mx-0 lg:px-[62.5px] lg:my-[10px]"
     >
         <img src={img} alt="img1" className="mb-5"/>
-        <span className={`font-[500] text-xl capitalize ${textColor}`}>{topic}</span>
+        <span className={`font-[500] text-xl ${textColor}`}>{topic}</span>
         <p className={`font-[300] text-[16px] mt-5 ${textColor}`}>
             {desc}
         </p>

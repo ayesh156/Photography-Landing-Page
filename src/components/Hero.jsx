@@ -1,4 +1,4 @@
-import noah from '../assets/noah-buscher-1-kPytLsVkY-unsplash-PhotoRoom.png';
+import noah from '../assets/noahPhotoRoom.png';
 import {socialIcons} from '../constants/index.jsx';
 
 const Hero = () => {

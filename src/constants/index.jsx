@@ -4,6 +4,11 @@ import google from "../assets/social-icons/google.svg";
 import fb from "../assets/social-icons/fb.svg";
 import linkedin from "../assets/social-icons/linkedin.svg";
 
+import ftwitter from "../assets/social-icons/twitter-white.svg";
+import fgoogle from "../assets/social-icons/google-white.svg";
+import ffb from "../assets/social-icons/fb-white.svg";
+import flinkedin from "../assets/social-icons/linkedin-white.svg";
+
 import img1 from "../assets/about-us_img/img-1.png";
 import img2 from "../assets/about-us_img/img-2.png";
 import img3 from "../assets/about-us_img/img-3.png";
@@ -15,12 +20,15 @@ import img7 from "../assets/about-us_img/img-2.png";
 import pimg1 from "../assets/portfolio_img/img-1.png";
 import pimg2 from "../assets/portfolio_img/img-2.png";
 import pimg3 from "../assets/portfolio_img/img-3.png";
+import pimg4 from "../assets/portfolio_img/img-4.jpg";
 import pimg5 from "../assets/portfolio_img/img-5.png";
 import pimg6 from "../assets/portfolio_img/img-6.png";
 import pimg7 from "../assets/portfolio_img/img-7.png";
 import pimg8 from "../assets/portfolio_img/img-8.png";
 import pimg9 from "../assets/portfolio_img/img-9.png";
 import pimg10 from "../assets/portfolio_img/img-10.png";
+import pimg11 from "../assets/portfolio_img/img-11.jpg";
+import pimg12 from "../assets/portfolio_img/img-12.jpg";
 
 import wimg1 from "../assets/whyme_img/img-1.svg";
 import wimg2 from "../assets/whyme_img/img-2.svg";
@@ -72,40 +80,60 @@ export const testimonialCardItems = [
 
 export const whymeItems = [
   {
-    left: "605px",
     textColor: "text-white",
     img: wimg1,
     topic: "agency",
     desc: "Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et."
   },
   {
-    left: "1088px",
     textColor: "text-primary-white",
     img: wimg2,
     topic: "choose idea",
     desc: "Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et."
   },
   {
-    left: "120px",
     textColor: "text-primary-white",
     img: wimg3,
     topic: "satisfaction",
     desc: "Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et."
   },
   {
-    left: "605px",
     textColor: "text-primary-white",
     img: wimg4,
     topic: "quality",
     desc: "Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et."
   },
   {
-    left: "1088px",
     textColor: "text-primary-white",
     img: wimg5,
     topic: "creativity",
     desc: "Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et."
   },
+];
+
+export const priceItems = [
+  {
+    price: "600$",
+    duration: "6 hours",
+    photos: "unlimited",
+    retouch: "unlimited",
+    finish: "3 days"
+  },
+  {
+    price: "400$      ",
+    duration: "3 hours",
+    photos: "60 - 80",
+    retouch: "25 items",
+    finish: "10 days"
+  },
+  {
+    price: "550$",
+    duration: "4 hours",
+    photos: "85 - 90",
+    retouch: "40 items",
+    finish: "7 days"
+  },
+
 ];
 
 export const socialIcons = [
@@ -125,7 +153,25 @@ export const socialIcons = [
     name: "linkedin",
     image: linkedin,
   },
+];
 
+export const footerSocialIcons = [
+  {
+    name: "twitter",
+    image: ftwitter,
+  },
+  {
+    name: "google",
+    image: fgoogle,
+  },
+  {
+    name: "fb",
+    image: ffb,
+  },
+  {
+    name: "linkedin",
+    image: flinkedin,
+  },
 ];
 
 export const aboutImg = [
@@ -178,7 +224,7 @@ export const portfolioImg = [
   {
     name: "img-5",
     image: pimg5,
-    class: 'vertical'
+    class: 'vertical2'
   },
   {
     name: "img-6",
@@ -205,4 +251,20 @@ export const portfolioImg = [
     image: pimg10,
     class: 'horizontal'
   },
+  {
+    name: "img-4",
+    image: pimg11,
+    class: 'horizontal'
+  },
+  {
+    name: "img-11",
+    image: pimg12,
+    class: 'horizontal'
+  },
+  {
+    name: "img-12",
+    image: pimg4,
+    class: 'normal'
+  },
+
 ];

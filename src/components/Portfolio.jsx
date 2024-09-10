@@ -9,7 +9,7 @@ const AboutUs = () => {
     return (
         <div className="relative min-h-screen bg-primary-black">
 
-            <div className="relative h-[2250px] lg:h-[1170px] pt-[76px]">
+            <div className="relative h-[3000px] lg:h-[1170px] pt-[76px]">
 
                 <div className="flex flex-col justify-between">
 

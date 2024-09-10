@@ -41,7 +41,9 @@ const ImageSlider = () => {
             >
                 {/* Icons */}
                 {aboutImg.map((item, i) => (
-                    <SwiperSlide key={i} className="flex justify-center h-[358px] w-[293px]"><img className="h-full w-full object-cover" src={item.image} alt={item.name}/></SwiperSlide>
+                    <SwiperSlide key={i} className="flex justify-center h-[358px] w-[293px]">
+                        <img className="h-full w-full object-cover" src={item.image} alt={item.name}/>
+                    </SwiperSlide>
                 ))}
                 <div className="slider-controler">
                 </div>

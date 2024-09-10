@@ -4,6 +4,8 @@ import AboutUs from "./components/AboutUs.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import Benefit from "./components/Benefit.jsx";
 import Testimonial from "./components/Testimonial.jsx";
+import PriceList from "./components/PriceList.jsx";
+import CTAFooter from "./components/CTAFooter.jsx";
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
             <Portfolio />
             <Benefit />
             <Testimonial />
+            <PriceList />
+            <CTAFooter />
         </>
     )
 }
