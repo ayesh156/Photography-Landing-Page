@@ -12,7 +12,7 @@ const AboutUs = () => {
                 <div className="flex flex-col lg:flex-row justify-between">
                     {/* Left Section */}
                     <div
-                        className="mx-[120px] font-[400] text-5xl font-['Cormorant'] text-center lg:text-left lg:text-[70px] lg:leading-[85px] text-white">
+                        className="lg:mx-[120px] font-[400] text-5xl font-['Cormorant'] text-center lg:text-left lg:text-[70px] lg:leading-[85px] text-white">
                         <div>
                             <span>ABOUT</span><br/>
                             <span>US</span>
