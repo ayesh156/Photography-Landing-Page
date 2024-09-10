@@ -6,7 +6,7 @@ const Benefit = () => {
     return (
         <div className="relative min-h-screen bg-primary-black">
 
-            <div className="lg:h-[682px] h-[1450px] pt-[75px]">
+            <div className="lg:h-[682px] h-[1510px] pt-[75px]">
 
                 <div className="flex flex-col lg:flex-row justify-between">
 
