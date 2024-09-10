@@ -7,6 +7,7 @@ import Testimonial from "./components/Testimonial.jsx";
 import PriceList from "./components/PriceList.jsx";
 import CTAFooter from "./components/CTAFooter.jsx";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import whatsappUser from "./assets/whatsapp_user.jpeg"
 
 function App() {
 
@@ -20,9 +21,8 @@ function App() {
             <Testimonial />
             <PriceList />
             <CTAFooter />
-            <div className="fixed bottom-10 right-4 lg:right-10 z-50">
-                <FloatingWhatsApp phoneNumber="+94 783233760"  accountName="Guest" className="text-primary-black"/>
-            </div>
+            <FloatingWhatsApp phoneNumber="+94 783233760" avatar={whatsappUser}  accountName="Unknown User" className="text-primary-black"/>
+
         </>
     )
 }
