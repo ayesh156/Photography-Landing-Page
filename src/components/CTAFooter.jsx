@@ -20,7 +20,7 @@ const CTAFooter = () => {
                     <div className="flex items-center lg:w-[702px] w-full bg-white border border-gray-300 px-2 overflow-hidden">
                         <input type="text" placeholder="Enter Your Email Address"
                                className="flex-1 font-[400] lg:h-[80px] lg:text-[26px] leading-[31px] pr-2 pt-2 pb-2 lg:pl-[34px] font-[Cormorant] bg-white text-primary-white outline-none"/>
-                        <button className="bg-secondary-green text-white lg:text-[26px] px-4 text-[16px] lg:py-2 h-9 lg:h-[65px] lg:w-[151px] hover:bg-blue-600">Submit</button>
+                        <button className="bg-secondary-green text-white lg:text-[26px] px-4 text-[16px] lg:py-2 h-9 lg:h-[65px] lg:w-[151px] hover:bg-primary-green">Submit</button>
                     </div>
 
                     <div className="lg:text-xl text-[16px] lg:w-[794px] text-center font-[300]">* By clicking “<span className="font-[600]">Submit</span>”
