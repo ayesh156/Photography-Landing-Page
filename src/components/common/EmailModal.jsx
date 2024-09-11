@@ -1,10 +1,6 @@
 import {useState} from "react";
 import {
-    Box,
-    IconButton,
     TextField,
-    useTheme,
-    Typography,
 } from "@mui/material";
 import {X} from "lucide-react";
 import axios from "axios";
@@ -35,17 +31,15 @@ const EmailModal = ({open, onClose}) => {
         comment: "",
     };
 
-    // Form validation and submission
+    // Form submit handler
     const handleSubmit = (values, {resetForm}) => {
-        // Simple validation
         console.log(values);
 
         axios
-            .post(`http://localhost:3001/api`, values)
+            .post(`http://localhost:3001/api`, values) // Send form data via POST request
             .then((response) => {
-                // Handle successful response, if needed
-                console.log(response.data);
                 if (response.data.status === 1) {
+                    // Show success toast notification
                     toast.success(response.data.message, {
                         position: "top-right",
                         autoClose: 5000,
@@ -82,19 +76,23 @@ const EmailModal = ({open, onClose}) => {
     };
 
     return (
+        // Modal wrapper with fade-in/out effect based on `open` prop
         <div
             className={`fixed inset-0 flex justify-center items-center z-50 transition-colors ${open ? "visible bg-black/20" : "invisible"}`}>
             <ToastContainer/>
             <div onClick={(e) => e.stopPropagation()}
                  className={`shadow p-6 transition-all ${open ? "scale-100 opacity-100" : "scale-125 opacity-0"}`}>
-
+                {/* Modal content */}
                 <div
-                    className="relative h-[538px] lg:h-[580px] mx-2 lg:mx-0 lg:w-[900px] w-[310px] flex flex-col items-center bg-secondary-green lg:py-8 lg:px-24 py-12 px-8 space-y-10 lg:space-y-10">
+                    className="relative h-[580px] lg:h-[580px] mx-2 lg:mx-0 lg:w-[900px] w-[320px] flex flex-col items-center bg-secondary-green py-6 px-6 lg:px-0">
                     <button
                         onClick={onClose}
                         className="absolute top-2 right-2 p-1 rounded-lg text-gray-400 bg-transparent hover:text-red-600 transition">
                         <X/>
                     </button>
+
+                    <h1 className="text-3xl lg:text-4xl mb-7 pt-4 lg:pt-2">Contact Us</h1>  {/* Modal title */}
+                    {/* Formik form setup */}
                     <Formik
                         onSubmit={handleSubmit}
                         initialValues={initialValues}
@@ -111,7 +109,7 @@ const EmailModal = ({open, onClose}) => {
                               isValid,
                           }) => (
                             <form onSubmit={handleSubmit}
-                                  className="relative md:h-[638px] lg:h-[580px] mx-2 lg:mx-0 lg:w-[900px] w-[310px] flex flex-col items-center bg-secondary-green lg:py-8 lg:px-24 py-12 px-8 space-y-10 lg:space-y-10">
+                                  className="flex flex-col items-center space-y-10 lg:space-y-8">
                                 <TextField type="text" placeholder="Name" sx={{
                                     "& .MuiInputBase-input": {
                                         fontFamily: "Cormorant", // Change to your desired font family
@@ -237,7 +235,7 @@ const EmailModal = ({open, onClose}) => {
                                 <div className="w-full flex justify-end">
                                     <button
                                         type="submit"
-                                        className="bg-transparent border-2 border-white text-white lg:text-[26px] px-4 text-[16px] lg:py-1 h-9 lg:h-[60px] lg:w-[150px] hover:bg-white hover:text-black transition">Submit
+                                        className="bg-transparent border-2 border-white text-white lg:text-[26px] px-4 text-[16px] lg:py-1 h-9 lg:h-[50px] lg:w-[150px] hover:bg-white hover:text-black transition">Submit
                                     </button>
                                 </div>
                             </form>

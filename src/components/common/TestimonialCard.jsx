@@ -1,5 +1,6 @@
 import React from "react";
 
+// TestimonialCard component displays a testimonial with an image, name, social media handle, and description
 const TestimonialCard = ({img,name,social,desc}) => {
 
     return (

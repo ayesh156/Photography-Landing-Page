@@ -1,10 +1,9 @@
 import React from "react";
-import {SwiperSlide} from "swiper/react";
 
+// PriceCard component displays pricing details
 const PriceCard = ({price,duration,photos,retouch,finish}) => {
 
     return (
-
             <div
                 className="lg:w-[508px] h-[684px] backdrop-blur-sm bg-secondary-green/20 px-[63px] py-8 flex flex-col items-center space-y-14">
                 <div className="text-center">

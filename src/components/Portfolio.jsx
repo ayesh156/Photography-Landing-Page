@@ -22,6 +22,7 @@ const AboutUs = () => {
                         className="lg:mx-[120px] text-center mt-8 lg:mt-[55px] lg:text-right">
                         <div className="lg:flex lg:justify-end">
                             <ul className="flex flex-col lg:flex-row gap-2 lg:gap-0 font-['Cormorant']">
+                                {/* Repeated Components */}
                                 {portfolioItems.map((item, i) => (
                                     <li key={i} className="lg:ml-[68px]">
                                         <button
@@ -37,6 +38,7 @@ const AboutUs = () => {
                     </div>
                 </div>
 
+                {/* Gallery Section */}
                 <div
                     className="absolute top-[372px] w-full">
                     <Gallery />

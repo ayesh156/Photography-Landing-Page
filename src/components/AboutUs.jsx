@@ -32,10 +32,12 @@ const AboutUs = () => {
                     </div>
                 </div>
 
+                {/* Down Arrow */}
                 <div className="absolute lg:left-[254px] left-5 top-[470px] lg:top-[312px] z-20">
                     <img src={down_arrow} alt=""/>
                 </div>
 
+                {/* Statistics */}
                 <div
                     className="absolute top-[503px] left-1/2 h-[190px] transform -translate-x-1/2 flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0">
                     <div className="text-right  xl:leading-[3.5rem] leading-[2.5rem] border-r-2 border-white lg:w-[246px] pr-9">
@@ -52,6 +54,7 @@ const AboutUs = () => {
                     </div>
                 </div>
 
+                {/* Image Slider */}
                 <div
                     className="absolute top-[800px] w-full">
                 <ImageSlider/>

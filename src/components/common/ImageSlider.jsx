@@ -1,12 +1,12 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import {aboutImg} from "../../constants/index.jsx";
+import 'swiper/css'; // Import Swiper core styles
+import 'swiper/css/effect-coverflow'; // Import coverflow effect styles
+import 'swiper/css/pagination'; // Import pagination styles
+import 'swiper/css/navigation'; // Import navigation styles
+import {aboutImg} from "../../constants/index.jsx"; // Import image data
 
-import {Navigation} from 'swiper/modules';
-import {CircleArrowLeft, CircleArrowRight} from "lucide-react";
+import {Navigation} from 'swiper/modules'; // Import Navigation module
+import {CircleArrowLeft, CircleArrowRight} from "lucide-react"; // Import arrow icons
 
 const ImageSlider = () => {
 
@@ -39,15 +39,15 @@ const ImageSlider = () => {
                 modules={[Navigation]}
                 className="mt-20"
             >
-                {/* Icons */}
+                {/* Render images in SwiperSlide */}
                 {aboutImg.map((item, i) => (
                     <SwiperSlide key={i} className="flex justify-center h-[358px] w-[293px]">
                         <img className="h-full w-full object-cover" src={item.image} alt={item.name}/>
                     </SwiperSlide>
                 ))}
-                <div className="slider-controler">
-                </div>
+                <div className="slider-controler"></div>
             </Swiper>
+                {/* Navigation buttons */}
             <button className="swiper-button-prev"><CircleArrowLeft/></button>
             <button className="swiper-button-next"> <CircleArrowRight/></button>
             </div>

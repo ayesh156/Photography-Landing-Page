@@ -20,7 +20,7 @@ const PriceList = () => {
             }}
         >
 
-            <div className="absolute inset-0 bg-[rgba(13,15,17,0.83)]"></div>
+            <div className="absolute inset-0 bg-[rgba(13,15,17,0.83)]"></div> {/* Overlay for background */}
 
             <div className="relative h-[1061px] pt-[75px]">
 
@@ -29,6 +29,7 @@ const PriceList = () => {
                     <h1>PRICELIST</h1>
                 </div>
                 <div className="flex">
+                    {/* Swiper Component for price list */}
                     <Swiper
                         effect={'coverflow'}
                         grabCursor={true}
@@ -64,6 +65,7 @@ const PriceList = () => {
                         modules={[EffectCoverflow, Pagination, Navigation]}
                         className="mt-[81px]"
                     >
+                        {/* Map through priceItems to display PriceCard components */}
                         {priceItems.map((item, i) => (
                             <SwiperSlide key={i} className="flex justify-center">
                                 <PriceCard price={item.price} duration={item.duration} photos={item.photos}
@@ -71,7 +73,7 @@ const PriceList = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    <div className="swiper-pagination mb-16 lg:mb-12"></div>
+                    <div className="swiper-pagination mb-16 lg:mb-12"></div> {/* Pagination dots */}
                 </div>
             </div>
 
